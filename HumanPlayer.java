@@ -1,19 +1,5 @@
-import java.util.Scanner;
-
-// Interface for player behavior
-interface Player {
-    int makeGuess(int minRange, int maxRange);
-    void updateGuessRange(int guess, String feedback);
-}
-
-// Interface for AI opponent behavior
-interface AIPlayer {
-    int makeGuess(int minRange, int maxRange);
-    void updateGuessRange(int guess, String feedback);
-}
-
 // Class representing a human player
-class HumanPlayer implements Player {
+public class HumanPlayer implements Player {
     private Scanner scanner;
 
     public HumanPlayer(Scanner scanner) {
