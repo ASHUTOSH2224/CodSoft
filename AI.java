@@ -1,5 +1,5 @@
 // Class representing an AI player
-public class AI implements AIPlayer {
+class AI implements AIPlayer {
     private int minRange;
     private int maxRange;
 
@@ -10,7 +10,8 @@ public class AI implements AIPlayer {
 
     public int makeGuess(int minRange, int maxRange) {
         // AI's guess logic goes here
-        return (minRange + maxRange) / 2; // For simplicity, AI chooses the midpoint of the range
+        // For simplicity, AI chooses the midpoint of the current range
+        return minRange + (int) (Math.random() * (maxRange - minRange + 1));
     }
 
     public void updateGuessRange(int guess, String feedback) {
@@ -22,3 +23,4 @@ public class AI implements AIPlayer {
         }
     }
 }
+

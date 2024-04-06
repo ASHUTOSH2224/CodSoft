@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 // Class representing a human player
 public class HumanPlayer implements Player {
     private Scanner scanner;
@@ -15,3 +17,4 @@ public class HumanPlayer implements Player {
         // Human player doesn't need to update guess range
     }
 }
+ 

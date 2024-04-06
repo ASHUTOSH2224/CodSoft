@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 // Interface for player behavior
 interface Player {
